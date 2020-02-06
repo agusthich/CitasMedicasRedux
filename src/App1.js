@@ -1,23 +1,18 @@
 import React from 'react';
-import AgregarCita from './componentes/AgregarCita';
+
 import ListadoCitas from './componentes/ListadoCitas';
 
 // Redux
 import store from './store';
 import { Provider } from 'react-redux';
 
-function App() {
+function App1() {
   return (
     <Provider store={store}>
       <div className="container">
-          <header>
-              <h1 className="text-center">Administrador de Pacientes</h1>
-          </header>
-
+        
           <div className="row mt-3">
-              <div className="col-md-6">
-                  <AgregarCita />
-              </div>
+             
               <div className="col-md-6">
                   <ListadoCitas />
               </div>
@@ -27,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default App1;
